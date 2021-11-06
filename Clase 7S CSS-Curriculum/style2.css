@@ -66,114 +66,30 @@ html{
     position:relative;
 }
 
+.midesc{
+    font-family: 'Comic Neue', cursive;
+    text-align: justify;
+    margin-left: 150px;
+    width: 1000px;
+    }
+
+.hab{
+    font-family: 'Comic Neue', cursive;
+    margin-left: 150px;
+    text-align: justify;
+    width: 1000px;
+    }
+
+h3{
+    margin-left: 150px;
+}
 
 .white-space{
     height: 22.19px;
     background-color:white;
 }
 
-.Item{
-    background-color: rgb(10, 175, 175);
-    height: 30px;
-    position: relative;
-    border-radius: 25px;
-    padding-bottom: 5px;
-    
-}
 
-h2.subtitulos{
-    color: white;
-    width: 395.62px;
-    height: 17px;
-    text-align: center;
-    left: 12.45px;
-    position: relative;
-    
-}
-
-.datosp{
-    width:4 16px;
-    height: 73px;
-    left: 39px;
-    font-family: 'Comic Neue', cursive;
-    padding-top: 20px;
-}
-
-.nombre{
-    font-weight: bold;
-    font-family: 'Comic Neue', cursive;
-    font-weight: 70px;
-    font-size: 15px;
-    line-height: 12.7px;
-    left: -0.7%;
-    position: relative;
-}
-
-li.Nom{
-    
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 12.7px;
-    padding-top: 0px;
-}
-
-.fechanac{
-    font-weight: bold;
-    font-family: 'Comic Neue', cursive;
-    font-weight: 70px;
-    font-size: 15px;
-    line-height: 12.7px;
-    left: -0.7%;
-    position: relative;
-}
-
-li.Fecha{
-    font-family: 'Comic Neue', cursive;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 12.7px;
-    padding-top: 15px;
-}
-
-.lugarnac{
-    font-weight: bold;
-    font-family: 'Comic Neue', cursive;
-    font-weight: 70px;
-    font-size: 15px;
-    line-height: 12.7px;
-    left: -0.7%;
-    position: relative;
-}
-
-li.Lugar{
-    font-family: 'Comic Neue', cursive;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 12.7px;
-    padding-top: 15px;
-}
-
-.item1{
-    font-weight: bold;
-    font-family: 'Comic Neue', cursive;
-    font-weight: 70px;
-    font-size: 15px;
-    line-height: 12.7px;
-    left: -0.7%;
-    position: relative;
-}
-
-li.inf1{
-    font-family: 'Comic Neue', cursive;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 12.7px;
-    padding-top: 15px;
-}
-
-p{
-    margin-left: 74px;
-}
 
 .footer{
     background-color: rgb(10, 175, 175);
@@ -213,7 +129,7 @@ p{
     font-family: 'Comic Neue', cursive;
     width: 300px;
     height: 17px;
-    left: 450px;
+    left: 580px;
     text-align: center;
     font-weight:700;
     font-size:20px;
@@ -221,4 +137,3 @@ p{
     font-style: normal;
     position: absolute;
 }
-
