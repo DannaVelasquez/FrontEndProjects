@@ -1,0 +1,156 @@
+*{
+    margin: 0%;
+}
+
+header{
+    display: flex;
+    flex-wrap:nowrap;
+    width: 100%;
+    background-color: #222222;
+    height: 100px;
+    position: absolute;
+    justify-content:space-between; /*da la organizacion a la seccion del header*/
+}
+
+.pizza{
+    position: relative;
+    height: 85px;
+    align-self: center; /*alinear respecto al cross axis*/
+    padding-left: 20px; /*da margen a la izquierda*/
+}
+
+.navbar{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #f3f3f3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+    position: relative;
+    padding-right: 20px; /*da margen a la derecha*/
+}
+
+.general{
+    display: flex;
+    background-color: #e5e5e5;
+    margin-top:100px;
+    flex-wrap:nowrap;
+    width: 100%;
+    height: 500px; /*altura del fondo*/
+    position: absolute;
+    padding-left: 0%;
+    padding-right: 0%;
+    justify-content:space-evenly/*da la organizacion a la seccion del header*/
+}
+
+.oferta{
+    width: 745px;
+    height: 445px;
+    background-image: url(/delivery.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    margin-top: 20px;/*margen para el titulo de la oferta*/
+}
+
+.envio{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.color-1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fc200c;
+}
+
+.color-2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f3f3f3;
+}
+
+.infopizzas{
+    width: 745px;
+    height: 445px;
+    background-color: white;
+    margin-top: 20px;/*margen para el titulo del podio*/
+    position: relative;
+}
+
+.podio{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fc200c;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.top{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #222222;
+    text-align: left;
+    padding-top: 80px;
+    padding-left: 180px;
+}
+
+.sabores{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-left: 140px;
+}
+
+.sabor{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #222222;
+    line-height: 40px;
+}
+
+.pizzaf{
+    position: relative;    
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+footer{
+    display: flex; /*para posicionar toda la info del footer*/
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 125px;
+    background-color: #222222;
+    color: #f3f3f3;
+    position: absolute;
+    margin-top: 38%;/*para ubicar el footer al final de la seccion*/
+}
+
+.navbar2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #f3f3f3;
+    padding-top: 15px;
+    line-height: 15px;
+    position: relative;
+    align-self: center;/*alinear respecto al cross axis*/
+    padding-left: 20px;
+}
+
+.pizza2{
+    position: relative;
+    height: 80px;
+    padding-right: 40px; /*da margen desde el borde derecho*/
+    align-self: center;/*alinear respecto al cross axis*/
+}
