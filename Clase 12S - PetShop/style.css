@@ -1,5 +1,6 @@
 * {
     margin: 0%;
+    box-sizing: border-box;
 }
 
 .barra{
@@ -11,55 +12,64 @@
 
 .oferta{
     display: flex;
-    align-items: center;
+    flex-direction: row; /*alinea horizontalmente*/
+    align-items: center; /*centrar en el eje vertical*/
+    justify-content: space-evenly; /*centrar en el eje horizontal*/
     height: 20px;
+    padding-left: 30px;
     color:rgba(243, 243, 243, 1);
     font-size: 10px;
-    line-height: 11.72px;
-    font-style:normal;
     font-family: 'Roboto', sans-serif;
-    padding-left: 90px;
-   
 }
 
 .oferta-container{
     display: flex;
-    list-style: none;
+    flex-direction: row;  /*alinea horizontalmente*/
+    justify-content: space-evenly; 
+    list-style: none; /*elimina viñetas*/
     margin-left: 1100px;
 }
 
 .flecha{
+    display: flex;
+    flex-direction: row; /*alinea horizontalmente*/
+    align-items: center; /*centra verticalmente*/
+    justify-content: center; /*centra horizontalmente*/
     color: rgba(243, 243, 243, 1);
     height: 2.75px;
     width: 5.5px;
-    top: 1px;
     margin-top: 2px;
 }
 
 .navbar{
+    display: flex;
+    flex-direction: row; /*alinea verticalmente*/
+    align-items: center; /*centra verticalmente*/
+    justify-content: space-between; 
     width: 100%;
     height: 62px;
+    padding-left: 40px;
+    padding-right: 40px;
     background-color: rgba(240, 168, 62, 1);
     color:rgba(255, 255, 255, 1);
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    font-style: normal;
     position: relative;
 }
 
 .logo-container{
     display: flex;
-    margin-left: 42.51px;
-    top: 20px;
+    flex-direction: row; 
+    align-items: center; /*centra el logo verticalmente*/
     position: relative;
 }
 
 .navbar-container{
     display: flex;
-    list-style: none;
-    margin-left: 1100px;
-    padding-top: 23px;
-    position: absolute;
+    flex-direction: row;
+    align-items: center; /*centra las opciones del navegador*/
+    list-style: none; /*elimina los puntos de la lista*/
+    position: relative;
 }
 
 .huella{
@@ -68,45 +78,57 @@
 }
 
 .banner{
+    
     width: 100%;
     height: 550px;
     background-image: url(./1.png);
-    background-size:cover;
+    background-size:cover; /*coloca la imagen de portada*/
+    position: relative;
 }
 
 .notes{
+    display: flex;
+    flex-direction: column; /*distribuye los elementos de forma vertical*/
+    align-items:center; /*alinea a la izquierda*/
+    justify-content: center; /*centra de forma vertical*/
+    position: relative;
     margin-left: 1000px;
     padding-top: 220px;
 }
 
 .note1{
-    background-color: rgb(255, 255, 255, 1);
     display: flex;
+    flex-direction: column;
+    align-self: center; /*centra la nota*/
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 1);
     width: 355px;
     height: 54px;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
-    font-style: normal;
     font-weight:900;
-    align-items: center;
-    padding-left: 25px;
     position: relative;
 }
 
 .note2{
-    text-align: center;
-    padding-right: 100px;
+    text-align: center; /*centra la nota*/
+    align-self: center;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    position: relative;
 }
 
 .note3{
-    margin-left: 128px;
+    align-self: center; /*centra la nota*/
     position: relative;
 }
 
 .text3{
     display: flex;
+    flex-direction: column;
+    justify-content: center; /*centra la nota horizontalmente*/
+    align-items: center; /*centra la nota verticalmente*/
     width: 110px;
     height: 49px;
     background-color: rgba(240, 168, 62, 1);
@@ -114,11 +136,12 @@
     font-family: 'Roboto', sans-serif;
     font-weight:bolder;
     font-size: 16px;
-    line-height: 18.75px;
-    align-items: center;
-    padding-left: 15px;
     position: relative;
     cursor: pointer;
+}
+
+.destacados{
+    position: relative;
 }
 
 .huella{
@@ -135,9 +158,7 @@ h1{
     font-size: 40px;
 }
 
-.destacados{
-    position: relative;
-}
+
 .prod-dest{
     text-align: center;
     color: rgba(102, 102, 102, 1);
@@ -148,15 +169,17 @@ h1{
 
 .products{
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row; /*distribuye los productos de forma horizontal*/
+    justify-content: center; /*centra los elementos sobre el eje horizontal*/
+    align-items: center; /*centra los elementos sobre el eje vertical*/
     height: 20px;
     font-family: 'Roboto', sans-serif;
     font-style:normal;
     font-size: 15px;
     color:rgba(60, 35, 19, 1);
     line-height: 11.72px;
-    padding-left: 350px;
-    margin-top: 200px;
+    position: relative;
 }
 
 .producto1{
@@ -166,13 +189,13 @@ h1{
     font-weight: bolder;
     color:rgba(60, 35, 19, 1);
     background-color:rgba(251, 250, 246, 1);
-    padding-left: 0%;
+    padding-left: 0%; /*quita el relleno de la tarjeta*/
     text-align:center
 } 
 
 .precio{
     color: rgba(240, 168, 62, 1);
-    font-weight: 500xp;
+    font-weight: 500px;
 }
 
 .producto2{
@@ -182,7 +205,7 @@ h1{
     font-weight: bolder;
     color:rgba(60, 35, 19, 1);
     background-color:rgba(251, 250, 246, 1);
-    padding-left: 0%;
+    padding-left: 0%; /*quita el relleno de la tarjeta*/
     text-align:center
 } 
 
@@ -193,16 +216,15 @@ h1{
     font-weight: bolder;
     color:rgba(60, 35, 19, 1);
     background-color:rgba(251, 250, 246, 1);
-    padding-left: 0%;
+    padding-left: 0%; /*quita el relleno de la tarjeta*/
     text-align:center
 } 
 
 .Contactanos-section{
-    margin-top: 200px
+    margin-top: 350px
 }
 
 .contact{
-    padding-left: 0%s;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-style:normal;
@@ -217,103 +239,79 @@ h1{
     list-style: none;
 }
 
-.nombre{
-    font-family: 'Roboto', sans-serif;
-    font-style:normal;
-    font-size: 9px;
-    font-weight: bolder;
-    color:rgba(255, 255, 255, 1);
-    background-color: rgba(60, 35, 19, 1);
-    width: 300px;
-    height: 40px;
-    border-radius: 15px;
+
+input{
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding-left: 10px;    
-    cursor: text;
-}
-
-.correo{
-    font-family: 'Roboto', sans-serif;
-    font-style:normal;
-    font-size: 9px;
-    font-weight: bolder;
-    color:rgba(255, 255, 255, 1);
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgba(60, 35, 19, 1);
     width: 300px;
     height: 40px;
-    border-radius: 15px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    padding-left: 10px; 
-    cursor: text;
-}
-
-.telefono{
     font-family: 'Roboto', sans-serif;
-    font-style:normal;
     font-size: 9px;
-    font-weight: bolder;
     color:rgba(255, 255, 255, 1);
-    background-color: rgba(60, 35, 19, 1);
-    width: 300px;
-    height: 40px;
     border-radius: 15px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    padding-left: 10px; 
     cursor: text;
 }
 
-.botones{
-    padding-left: 0%;
-    text-align: center;
-    list-style: none;
-    display: inline-flex;
+::placeholder{
+    color:rgba(255, 255, 255, 1);
 }
 
-.resetear{
-    font-family: 'Roboto', sans-serif;
-    font-style:normal;
-    font-size: 16px;
-    font-weight: bolder;
-    color:rgba(255, 255, 255, 1);
+.button{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#resetear{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(138, 135, 135, 1);
-    width: 80px;
+    width: 110px;
     height: 40px;
+    border: none;
     border-radius: 15px;
-    display: flex;
-    margin-left: 620px;
-    align-items: center;
-    padding-left: 20px; 
-    cursor: pointer;
-}
-
-.enviar{
+    color:rgba(255, 255, 255, 1);
     font-family: 'Roboto', sans-serif;
     font-style:normal;
     font-size: 16px;
-    font-weight: bolder;
-    color:rgba(255, 255, 255, 1);
-    background-color: rgba(240, 168, 62, 1);
-    width: 70px;
-    height: 40px;
-    border-radius: 15px;
-    display: flex;
-    margin-left:0px;
-    align-items: center;
-    text-align: center;
-    padding-left: 20px;
     cursor: pointer;
+    position: relative;
+}
+
+#submit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 168, 62, 1);
+    width: 110px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    color:rgba(255, 255, 255, 1);
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
 }
 
 .nav2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 60px;
     background-color: rgba(240, 168, 62, 1);
@@ -322,20 +320,56 @@ h1{
     font-size: 13px;
     font-style: normal;
     position: relative;
-    text-align: center;
-    list-style: none;
+}
+
+
+.input2 input
+{
+    background-color: rgba(255, 255, 255, 1);
     display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;    
+    width: 300px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    color:rgba(160, 160, 160, 1);
+    border-radius: 15px;
+    border: none;
+    cursor: text;
+    list-style: none;
+}
+
+.input2 ::placeholder
+{
+    color:rgba(160, 160, 160, 1);
+}
+
+.input2 button{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(60, 35, 19, 1);
+    width: 70px;
+    height: 34px;
+    margin-right: 50px;
+    border: none;
+    border-radius: 15px;
+    color:rgba(255, 255, 255, 1);
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
+    font-size: 9px;
+    cursor: pointer;
 }
 
 .suscrip{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 700;
-    color: rgba(255, 255, 255, 1);
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding-left: 15px;
+    color: rgba(255, 255, 255, 1); 
 }
 
 .message{
@@ -343,63 +377,25 @@ h1{
     font-size: 20px;
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
-    display: flex;
     align-items: center;
     text-align: center;
-    padding-left: 15px;
-    padding-top: 20px;
-}
-
-.ing-correo{
-    background-color: rgba(255, 255, 255, 1);
-    width: 271px;
-    height: 40px;
-    border-radius: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 9px;
-    font-weight: 400;
-    color: rgba(160, 160, 160, 1);
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
-    margin-top: 10px;
-    margin-left: 700px;
-    cursor:text;
-}
-
-.suscribirme{
-    background-color: rgba(60, 35, 19, 1);
-    width: 60px;
-    height: 34px;
-    border-radius: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 9px;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 1);
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
-    margin-top: 12px;
-    margin-left: 1340px;
-    position: absolute;
-    cursor: pointer;
+    padding-left: 30px;
 }
 
 .banner2{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column; /*distribuye los items en columna*/
+    align-items: flex-start; 
+    justify-content: center;
     width: 100%;
-    flex-direction: column;
+    padding-left: 50px;
     background-color: rgba(60, 35, 19, 1);
     color:rgba(255, 255, 255, 1);
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    font-style: normal;
     list-style: none;
-    align-self: center;
-    position: absolute;
-    padding-left: 50px;
-    padding-top: 15px;
+    position: relative;
 }
 
 .iconos{
@@ -413,22 +409,24 @@ h1{
 }
 
 .logoend{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
     position: absolute;
-    width: 150px;
-    padding-left: 1180px;
-    padding-top: 85px;
+    padding-right: 50px; /*da un espacio desde la margen derecha*/
 }
 
 .footer{
+    display: flex;
+    justify-content: center; /*centra la letra en el eje horizontal*/
+    align-items: center; /*centra la letra en el eje vertical*/
     background-color: rgba(34, 34, 34, 1);
     height: 20px;
     color: rgba(255, 255, 255, 1);
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     font-weight:700;
-    align-items: center;
-    text-align:center;
-    padding-top: 5px;
-    top: 220px;
     position: relative;
 }
+
+

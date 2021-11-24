@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,700;1,700&family=Mochiy+Pop+P+One&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-
     <title>Pet Shop</title>
+</head>
+<body>
 <header>
     <section class="barra">
         <div class="oferta"><p>Grandes ofertas en comederos</p>
@@ -24,9 +25,8 @@
         </div>
     </section>
 </header>
-</head>
-<body>
 <section class="navbar">
+    <img class="logo-container" src="Logo.png" alt="">
     <ul class="navbar-container">
         <i class="huella fas fa-paw"></i>
         &nbsp;
@@ -44,7 +44,6 @@
         &nbsp;
         <li>Contáctanos</li>
     </ul>
-    <img class="logo-container" src="Logo.png" alt="">
 </section>
 <section class="banner">
     <ul class="notes">
@@ -55,11 +54,15 @@
         <li class="note3" type="none"><p class="text3">COMEDEROS</p></li>
     </ul>
 </section>
+</br>
 <section class="destacados">
     <img class="huella" src="2.png" alt="">
+    </br>
     <h1>Productos Destacados</h1>
     </br>
     <p class="prod-dest">Comederos - Accesorios - Comida</p>
+    </br>
+    </br>
 </section>
 <section class="products">
     <ul class="producto1">
@@ -90,36 +93,46 @@
 <section class="Contactanos-section">
     <h3 class="contact">Contáctanos</h3>
     &emsp;
+    <form action="" method="">
     <ul class="datos">
-        <li class="nombre">Nombres y Apellidos</li>
+        <li>
+            <label for="name"></label>
+            <input type="text" id="name" name="insert_name" required="obligatorio" placeholder="Nombre y Apellido">
+        </li>
         <br>
-        <li class="correo">Ingresa tu correo electrónico</li>
+        <li>
+            <label for="email"></label>
+            <input type="email" id="email" name="insert_email" required="obligatorio" placeholder="Ingresa tu correo electrónico">
+        </li>
         <br>
-        <li class="telefono">Teléfono</li>
+        <li>
+            <label for="telephone"></label>
+            <input type="text" id="telephone" name="insert_telephone" required="obligatorio" placeholder="Teléfono">
+        </li>
         &emsp;
     </ul>
-    <div class="botones">
+    <div class="button">
+        <button type="reset" name="resetear_formulario" id="resetear">Resetear</button>
         &emsp;
-        &emsp;
-        <span class="resetear ">Resetear</span>
-        &emsp;
-        <span class="enviar">Enviar</span>
+        <button type="submit" name="submit_formulario" id="submit">Enviar</button>
     </div>
 </section>
 </br>
 </br>
 </br>
 <section class="nav2">
-    <i class="message far fa-envelope"></i>
-    &nbsp;
-    <span class="suscrip">Suscríbete para más novedades</span>
+    <i class="message far fa-envelope">
+    <span class="suscrip">Suscríbete para más novedades</span></i>
     &emsp;
-    <span class="ing-correo">Ingresa tu correo electrónico</span>
-    &emsp;
-    <span class="suscribirme">Suscribirme</span>
-    &emsp;
+    <form action="" method="">
+        <div class="input2">
+            <label for="email"></label>
+            <input type="email" id="email" name="suscribir_email" placeholder="Ingresa tu correo electrónico">
+            <button type="submit" value="suscribirme">Suscribirme</button>
+        </div>
 </section>
 <section class="banner2">
+    &emsp;
     <img class="iconos" src="/Location.png" alt="">
     &emsp;
     <img class="iconos" src="/Phone.png" alt="">
